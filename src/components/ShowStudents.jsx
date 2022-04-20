@@ -2,14 +2,6 @@ import { useState, useEffect } from "react";
 export const ShowStudents = () => {
   const [result, setresult] = useState([]);
 
-  // let result = [
-  //     { age: 21 },
-  //     { age: 13 },
-  //     { age: 14 },
-  //     { age: 15 },
-  //     { age: 16 },
-  //   ];
-
   useEffect(() => {
     showData();
   }, []);
@@ -20,6 +12,8 @@ export const ShowStudents = () => {
     console.log(res);
     setresult(res);
   };
+  // dataFn(showData);
+  // dataFn(sendDatatosib);
 
   return (
     <div>
